@@ -1,0 +1,12 @@
+.header{
+    width: 98%;
+    
+    background-color: whitesmoke;
+    padding: 15px;
+     position: fixed; 
+    top: 0%;
+    
+}
+.header h3{
+    margin-left: 1%;
+}
