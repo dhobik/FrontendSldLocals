@@ -11,17 +11,21 @@ export const DataProvider = ({children}) =>{
 
     const [formDatas, setFormData] = useState([]);
 
+    // const [rtoName,setRtoName] = useState('')
+    // const [zone,setZone] = useState('')
+    // const [alhena,setAlhena] = useState('')
+    // const [grl,setGrl] = useState('')
+    // const [tedi,setTedi] = useState('')
+    // const [zipCourt,setZipCourt] = useState('')
+    // const [mercydaz,setMercydaz] = useState('')
+    // const [micro,setMicro] = useState('')
+    // const [ssn,setSsn] = useState('')
+    // const [gb,setGb] = useState('')
+    // const [godawari,setGodawari] = useState('')
+
     const [rtoName,setRtoName] = useState('')
     const [zone,setZone] = useState('')
-    const [alhena,setAlhena] = useState('')
-    const [grl,setGrl] = useState('')
-    const [tedi,setTedi] = useState('')
-    const [zipCourt,setZipCourt] = useState('')
-    const [mercydaz,setMercydaz] = useState('')
-    const [micro,setMicro] = useState('')
-    const [ssn,setSsn] = useState('')
-    const [gb,setGb] = useState('')
-    const [godawari,setGodawari] = useState('')
+    const [manufactureItems,setManufactureItems] = useState('')
 
     const[search,setSearch]= useState('')
     
@@ -43,6 +47,7 @@ export const DataProvider = ({children}) =>{
     const[rtoZone,setRtoZone]=useState('')
     const[rtoname,setrtoName]=useState('')
     const[manufacturerName,setManufactureNmae]=useState('')
+    const[manufacturervalue,setManufacturevalue]=useState('')
     
   
    
@@ -50,12 +55,11 @@ export const DataProvider = ({children}) =>{
              
     return(
         <DataContext.Provider value={{
-            formDatas,setFormData,rtoName,setRtoName,zone,setZone,alhena,setAlhena,grl,setGrl,tedi,setTedi,
-            zipCourt,setZipCourt,mercydaz,setMercydaz,micro,setMicro,ssn,setSsn,gb,setGb,godawari,setGodawari,search,setSearch,
+            formDatas,setFormData,rtoName,setRtoName,zone,setZone,manufactureItems,setManufactureItems,search,setSearch,
             updateRtoName,setUpdateRtoName,updateZone,setUpdateZone,updateAlhena,setUpdateAlhena,updateGrl,setUpdateGrl,
             updatetedi,setUpdateTedi,updatezipCourt,setUpdateZipCourt,updatemercydaz,setUpdateMercydaz,updatemicro,SetMicro,updatessn,
             setUpdateSsn,updategb,setUpdateGb,updateGodawari,setUpdateGodawari,fromDate,setFormDate,toDate,setTodate,rtoZone,setRtoZone,
-            rtoname,setrtoName,manufacturerName,setManufactureNmae    
+            rtoname,setrtoName,manufacturerName,setManufactureNmae,manufacturervalue,setManufacturevalue 
 
         }}>
             {children}

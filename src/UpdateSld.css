@@ -1,4 +1,4 @@
-/* Ensure the container takes the full height of the viewport and centers its content */
+
 .update-container {
     display: flex;
     justify-content: center;

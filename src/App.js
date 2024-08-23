@@ -20,7 +20,7 @@ function App() {
       <div className='app-container'>
 
        <Header/>
-       <Nav/>  
+        <Nav/>   
        <Routes>
        <Route path='/add-sld-report' element={<AddSldLocals/> } />
        <Route path='/sld-report' element={<SldList/> } /> 
